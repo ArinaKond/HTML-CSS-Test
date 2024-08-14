@@ -1,0 +1,12 @@
+@import "vars";
+@import "header";
+@import "cards_list";
+@import "signpost";
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
