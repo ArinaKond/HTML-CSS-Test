@@ -32,6 +32,23 @@ body {
   list-style: none;
 }
 
+h1 {
+  font-size: 46px;
+  font-weight: 700;
+  padding-bottom: 80px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .header_container {
   height: 60px;
   border: 1px solid #DDDDDD;
@@ -95,6 +112,89 @@ body {
     width: 53px;
     height: 53px;
   }
+}
+
+.cards_list_container {
+  margin-top: 121px;
+  margin-bottom: 80px;
+  margin-left: 17px;
+  margin-right: 18px;
+}
+.cards_list .card {
+  width: 340px;
+  height: 355px;
+  position: relative;
+  border: 1px solid #DDDDDD;
+}
+.cards_list .card .card_image {
+  height: 190px;
+  width: 330px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 10px 0px #753BBD;
+}
+.cards_list .card .card_image .card_image-first {
+  height: 190px;
+  width: 330px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/classic-ensuite.png);
+}
+.cards_list .card .card_image .card_image-second {
+  height: 190px;
+  width: 330px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/premium-I.png);
+}
+.cards_list .card .card_image .card_image-third {
+  height: 190px;
+  width: 330px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/classic-studio.png);
+}
+.cards_list .card .card_image .card_image-third .card_label {
+  display: none;
+}
+.cards_list .card .card_image .card_image-fourth {
+  height: 190px;
+  width: 330px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/premium-I-studio.png);
+}
+.cards_list .card .card_image .card_image-fourth .card_label {
+  display: none;
+}
+.cards_list .card .card_image .card_image-fifth {
+  height: 190px;
+  width: 330px;
+  background-image: none;
+}
+.cards_list .card .card_image .card_image-fifth .card_label {
+  display: none;
+}
+.cards_list .card .card_label {
+  width: 54px;
+  background-color: #FBE200;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cards_list .card .card_description {
+  margin: 20px;
+}
+.cards_list .card .card_description h2 {
+  margin-bottom: 18px;
+}
+.cards_list .card .card_description h3 {
+  margin-bottom: 30px;
+}
+.cards_list .card .card_description .card_description-aspects {
+  font-size: 10px;
+  font-weight: 400;
+}
+.cards_list .card .card_description .card_description-aspects .icon {
+  margin-right: 10px;
+}
+.cards_list .card .card_description .card_description-aspects .time {
+  margin-bottom: 11px;
 }
 
 html {
