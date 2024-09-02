@@ -1,13 +1,7 @@
+@import "general";
 @import "vars";
+@import "fonts";
 @import "header";
 @import "cards_list";
 @import "signpost";
 @import "card";
-
-html{
-    box-sizing: border-box;
-}
-*,*::after,*::before{
-    box-sizing: inherit;
-}
-

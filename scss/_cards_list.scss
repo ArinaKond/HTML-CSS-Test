@@ -1,12 +1,12 @@
 .cards-list{
-    &_container{
+    &__container{
         margin-top: 121px;
         margin-bottom: 80px;
         margin-left: 17px;
         margin-right: 18px;
     }
     @media (min-width: 1200px){
-        &_container{
+        &__container{
             width: 875px;
             margin-top: 80px;
             margin-left: 100px;
