@@ -97,59 +97,76 @@ body {
   }
 }
 
-.signpost_container {
+.signpost__container {
   width: 340px;
   margin-top: 80px;
   margin-bottom: 41px;
   margin-left: 17px;
   margin-left: 18px;
 }
-.signpost_container .post {
+@media (min-width: 1200px) {
+  .signpost__container {
+    width: 1068px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media (min-width: 1920px) {
+  .signpost__container {
+    width: 1720px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.post {
   position: relative;
   display: inline-flex;
 }
-.signpost_container .post_image-left {
+.post__image-left {
   width: 50px;
-  height: 392px;
-  background-position: center;
-  background-image: url(../images/conversation.png);
+  align-items: center;
   box-shadow: 15px 0px #05C3DE;
   margin-right: 15px;
 }
-.signpost_container .post_description {
+.post__image-left-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.post__description {
   width: 275px;
   background-color: #F3F3F3;
   padding: 30px;
 }
-.signpost_container .post_title {
+.post__title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.signpost_container .post_subtitle {
+.post__subtitle {
   font-size: 12px;
   font-weight: 500;
   color: #767676;
   margin-bottom: 20px;
 }
-.signpost_container .post_description-aspects {
-  margin-bottom: 20px;
-}
-.signpost_container .post_description-aspects .event {
+.post__event {
   display: flex;
   justify-content: space-between;
   align-items: top;
   border-bottom: 1px solid #DDDDDD;
   margin-bottom: 15px;
 }
-.signpost_container .post_description-aspects .event .event_aspects {
+.post__event-aspects {
   display: flex;
-  justify-content: left;
 }
-.signpost_container .post_description-aspects .event .event_aspects .event_time-img {
+.post__time-img {
   margin: 4px;
 }
-.signpost_container .post_description-aspects .event_text {
+.post__event-text {
+  width: 157px;
   margin-left: 15px;
   margin-right: 10px;
   font-size: 16px;
@@ -157,12 +174,10 @@ body {
   color: #753BBD;
   margin-bottom: 10px;
 }
-.signpost_container .post_description-aspects .event_text-date {
-  padding: 0;
-  margin: 0;
+.post__event-text-date {
   color: #000000;
 }
-.signpost_container .post_btn {
+.post__btn {
   height: 48px;
   width: 215px;
   border: 1px solid #DDDDDD;
@@ -174,18 +189,16 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-.signpost_container .post_image-right {
-  background-image: url(../images/pattern.png);
+.post__image-right {
   display: none;
 }
+.post__image-right-img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 1200px) {
-  .signpost_container {
-    width: 1068px;
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-  }
-  .signpost_container .post_description {
+  .post__description {
     width: 1008px;
     height: 392px;
     background-color: #F3F3F3;
@@ -194,48 +207,46 @@ body {
     padding-left: 84px;
     padding-right: 84px;
   }
-  .signpost_container .post_title {
+  .post__title {
     font-size: 46px;
     margin-bottom: 30px;
   }
-  .signpost_container .post_subtitle {
+  .post__subtitle {
     font-size: 14px;
     margin-bottom: 30px;
   }
-  .signpost_container .post_description-aspects {
+  .post__description-aspects {
     margin-bottom: 0px;
   }
-  .signpost_container .post_description-aspects .event {
-    height: 45px;
+  .post__event:first-child .post__event-text-date {
+    visibility: hidden;
   }
-  .signpost_container .post_description-aspects .event_text {
+  .post__event:first-child .post__event-text-date::before {
+    content: "- Thursday 23 June 2022";
+    visibility: visible;
+  }
+  .post__event:last-child .post__event-text-date {
+    visibility: hidden;
+  }
+  .post__event:last-child .post__event-text-date::before {
+    content: "- Wednesday 31 August 2022";
+    visibility: visible;
+  }
+  .post__event-text {
+    width: 777px;
     font-size: 18px;
     margin-bottom: 20px;
     color: #753BBD;
   }
-  .signpost_container .post_description-aspects .event_text .first {
-    visibility: hidden;
-  }
-  .signpost_container .post_description-aspects .event_text .first::before {
-    content: "- Thursday 23 June 2022";
-    visibility: visible;
-  }
-  .signpost_container .post_description-aspects .event_text .second {
-    visibility: hidden;
-  }
-  .signpost_container .post_description-aspects .event_text .second::before {
-    content: "- Wednesday 31 August 2022";
-    visibility: visible;
-  }
-  .signpost_container .post_btn {
+  .post__btn {
     position: relative;
-    bottom: 244px;
+    bottom: 260px;
     left: 362px;
     height: 48px;
     width: 215px;
     border: none;
   }
-  .signpost_container .post_btn::before {
+  .post__btn::before {
     content: "";
     width: 40px;
     height: 2px;
@@ -247,28 +258,20 @@ body {
   }
 }
 @media (min-width: 1920px) {
-  .signpost_container {
-    width: 1720px;
-    margin-top: 80px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-  }
-  .signpost_container .post_image-left {
+  .post__image-left {
     width: 504px;
     height: 393px;
     background-position: center;
     box-shadow: none;
     margin-right: 0px;
   }
-  .signpost_container .post_image-right {
+  .post__image-right {
     width: 168px;
     height: 393px;
-    background-image: url(../images/pattern.png);
     display: unset;
     box-shadow: 40px 0px #05C3DE;
   }
 }
-
 html {
   box-sizing: border-box;
 }
