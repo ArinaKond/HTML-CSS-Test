@@ -12,37 +12,48 @@
 
 </head>
 <body>
-
-    <div class="wrapper">
-        <section class="header">
-            <div class="header__container">
-                <div class="header__logo">
-                    <a class="header__logo-link" href="#">
-                        <img class="header__logo-link-img" src="images/logo.svg" alt="logo">
-                    </a>
-                </div>
-
-                <nav class="header__menu">
-                    <nav class="header__navbar">
-                        <a href="#study">Study</a>
-                        <a href="#international">International</a>
-                        <a href="#research">Research</a>
-                        <a href="#we_are_beckett">We are Beckett</a>
-                        <a href="#business">Business</a>
-                        <a href="#covid-19">Covid-19</a>
-                    </nav>
-                    <button class="header__burger-btn"></button>
-                    <button class="header__search-btn">
-                        <img class="header__search-btn-img" src="images/search.svg" alt="search">
-                    </button>
-                </nav>
+    <header>
+        <div class="header__container">
+            <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-link-img" src="images/logo.svg" alt="logo">
+                </a>
             </div>
-        </section>
 
-        <section class="cards-list">
-            <div class="cards-list__container">
+            <nav class="header__menu">
+                <ul class="header__navbar">
+                    <li class="header__list-item">
+                        <a href="#study" class="header-link">Study</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#international" class="header-link">International</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#research" class="header-link">Research</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#we_are_beckett" class="header-link">We are Beckett</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#business" class="header-link">Business</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#covid-19" class="header-link">Covid-19</a>
+                    </li>  
+                </ul>
+                <button class="header__burger-btn"></button>
+                <button class="header__search-btn">
+                    <img class="header__search-btn-img" src="images/search.svg" alt="search">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="cards__container">
                 <h1>CARDS</h1>
-                <ul>
+                <ul class="cards-list">
                     <li class="card"> <!--first card-->
                         <div class="card__image">
                             <div class="card__label"> 360° </div> 
@@ -164,6 +175,6 @@
                 </ul>
             </div>
         </section> <!--end cards_list-->
-    </div> <!--end wrapper-->
+    </main>
 </body>
 </html>

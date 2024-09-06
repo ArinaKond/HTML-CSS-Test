@@ -17,12 +17,15 @@
         align-items: center;
     }
 
-    &__navbar a{
+    &__list-item{
         margin-right: 40px;
         font-weight: 500;
         font-size: 14px;
-        color: $black;
         display: none;
+        
+    }
+    &-link{
+        color: $black;
     }
 
     &__burger-btn{
@@ -55,7 +58,7 @@
         &__container{
             height: 53px;
         }
-        &__navbar a{
+        &__list-item{
             display: unset;
         }
         &__burger-btn{
