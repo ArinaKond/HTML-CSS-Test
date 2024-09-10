@@ -32,6 +32,7 @@
         width: 60px;
         height: 60px;
         border: 1px solid $light_grey;
+        border-right: none;
         background-color: $white;
         position: relative;
         &::after{
@@ -50,6 +51,7 @@
         width: 60px;
         height: 60px;
         border: 1px solid $light_grey;
+        border-right: none;
         background-color: $white;
         position: relative;     
     }
