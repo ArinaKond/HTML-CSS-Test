@@ -1,0 +1,130 @@
+.card{
+    $this: &;
+    width: 100%;
+    max-width: 460px;
+    min-height: 355px;
+    position: relative;
+    list-style-type: none;
+
+    &__image{
+        height: 190px;
+        width: 100%;
+        position: relative;
+        border-right: 10px solid $purple;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+        }
+    }
+
+    &:last-child{
+        border-left: 1px solid $light_grey;
+
+        #{$this}__image{
+            &::after{
+                content: none;
+            }
+        }
+        #{$this}__description{
+            border-left: none;
+        }
+    }
+
+    &__image-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 0;  
+    }
+    &__label{
+        z-index: 50;
+        position: absolute;
+        width: 54px;
+        background-color: $yellow;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__description{
+        position: relative;
+        width: 100%;
+        min-height: 125px;
+        padding: 20px;  
+        border: 1px solid $light_grey; 
+        border-top: none;
+    }
+    &__title{
+        margin-bottom: 18px;
+    }
+    &__subtitle{
+        margin-bottom: 30px;
+    }
+    &__description-aspects{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    &__icon{
+        margin-right: 10px;
+    }
+    &__time{
+        margin-bottom: 11px;
+    }
+}
+@media (min-width: 750px){
+    .card{
+        $this: &;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        max-width: 875px;
+        width: 100%;
+        min-height: 225px;
+
+        &:last-child{
+            border-left:none;
+            border-bottom: 1px solid $light_grey;
+            #{$this}__description{
+                border-left: 1px solid $light_grey;
+            }
+        }
+        &__image{
+            width: 40%;
+            min-width: 280px;
+            max-width: 360px;
+            height: 225px;
+        }
+        &__description{
+            width: 60%;
+            padding: 30px;
+            padding-bottom: 52px; 
+            border: 1px solid $light_grey; 
+            border-right: none;
+            border-bottom: none;
+        }
+        &__title{
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        &__subtitle{
+            margin-bottom: 45px;
+        }
+        &__description-aspects{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        &__icon{
+            margin-right: 10px;
+        }
+        &__time{
+            margin-bottom: 15px;
+        }
+    }  
+}

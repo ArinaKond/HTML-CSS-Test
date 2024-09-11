@@ -1,0 +1,15 @@
+.cards{
+    &__container{
+        margin-top: 121px;
+        margin-bottom: 80px;
+        margin-left: 17px;
+        margin-right: 18px;
+    }
+    @media (min-width: 750px){
+        &__container{
+            margin-top: 80px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    } 
+}

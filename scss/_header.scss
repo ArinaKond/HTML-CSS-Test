@@ -1,74 +1,77 @@
 .header{
-    &_container{
+    &__container{
         height: 60px;
         border: 1px solid $light_grey;
         display: flex;
         justify-content: space-between;
         align-items: center;
     } 
-    @media (min-width: 1200px){
-        &_container{
-            height: 53px;
-        }
-    }  
-
-    .logo_link{
+    
+    &__logo{
         margin-left: 15px;
     }
 
-    .header_btns{
+    &__menu{
         position: relative;
         display: flex;
         align-items: center;
-    
-        .navbar a{
-            margin-right: 40px;
-            font-weight: 500;
-            font-size: 14px;
-            color: $black;
-            display: none;
-        }
+    }
 
-        .menu_btn{
-            width: 60px;
-            height: 60px;
-            border: 1px solid $light_grey;
-            background-color: $white;
-            position: relative;
-            &::after{
-                content: "";
-                width: 15px;
-                height: 2px;
-                border-radius: 1px;
-                background-color: $black;
-                position: absolute;
-                top: 23px;
-                left:22px;
-                box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
-            }
-        }
-
-        .search_btn{
-            width: 60px;
-            height: 60px;
-            border: 1px solid $light_grey;
-            background-color: $white;
-            position: relative;     
-        }
+    &__list-item{
+        margin-right: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        display: none;
         
-        @media (min-width: 1200px){
-                .navbar a{
-                    display: unset;
-                }
-                .menu_btn{
-                    display: none;
-                }
-                .search_btn{
-                    width: 53px;
-                    height: 53px;
-                }
-            
+    }
+    &-link{
+        color: $black;
+    }
+
+    &__burger-btn{
+        width: 60px;
+        height: 60px;
+        border: 1px solid $light_grey;
+        border-right: none;
+        background-color: $white;
+        position: relative;
+        &::after{
+            content: "";
+            width: 15px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $black;
+            position: absolute;
+            top: 23px;
+            left:22px;
+            box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
         }
     }
+    &__search-btn{
+        width: 60px;
+        height: 60px;
+        border: 1px solid $light_grey;
+        border-right: none;
+        background-color: $white;
+        position: relative;     
+    }
+
+    @media (min-width: 1200px){
+        &__container{
+            height: 53px;
+        }
+        &__list-item{
+            display: unset;
+        }
+        &__burger-btn{
+            display: none;
+        }
+        &__search-btn{
+            width: 53px;
+            height: 53px;
+        }
+    
+}
+ 
     
 }

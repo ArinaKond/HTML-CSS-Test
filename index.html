@@ -12,32 +12,169 @@
 
 </head>
 <body>
-
-    <div class="wrapper">
-        <section class="header">
-            <div class="header_container">
-                <div class="logo">
-                    <a class="logo_link" href="#">
-                        <img class="logo_link-img" src="images/logo.svg" alt="logo">
-                    </a>
-                </div>
-
-                <nav class="header_btns">
-                    <nav class="navbar">
-                        <a href="#">Study</a>
-                        <a href="#">International</a>
-                        <a href="#">Research</a>
-                        <a href="#">We are Beckett</a>
-                        <a href="#">Business</a>
-                        <a href="#">Covid-19</a>
-                    </nav>
-                    <button class="menu_btn"></button>
-                    <button class="search_btn">
-                        <img class="search_btn-img" src="images/search.svg" alt="search">
-                    </button>
-                </nav>
+    <header>
+        <div class="header__container">
+            <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo-link-img" src="images/logo.svg" alt="logo">
+                </a>
             </div>
-        </section>
-    </div> <!--end wrapper-->
+
+            <nav class="header__menu">
+                <ul class="header__navbar">
+                    <li class="header__list-item">
+                        <a href="#study" class="header-link">Study</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#international" class="header-link">International</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#research" class="header-link">Research</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#we_are_beckett" class="header-link">We are Beckett</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#business" class="header-link">Business</a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#covid-19" class="header-link">Covid-19</a>
+                    </li>  
+                </ul>
+                <button class="header__burger-btn"></button>
+                <button class="header__search-btn">
+                    <img class="header__search-btn-img" src="images/search.svg" alt="search">
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards">
+            <div class="cards__container">
+                <h1>CARDS</h1>
+                <ul class="cards-list">
+                    <li class="card"> <!--first card-->
+                        <div class="card__image">
+                            <div class="card__label"> 360° </div> 
+                            <img class="card__image-img" src="images/classic-ensuite.png" alt="classic-ensuite"> 
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title">Classic Ensuite</h2>
+                            <h3 class="card__subtitle">BROADCASTING TOWER</h3>
+                            <div class="card__description-aspects">
+                                <div class="card__time">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__time-img" src="images/time.svg" alt="time">
+                                    </a>
+                                    43 week + 1 day tenancy
+                                </div>
+                                <div class="card__price">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__price-img" src="images/price.svg" alt="price">
+                                    </a>
+                                    £183.00 per week / £7,894.62 total
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card"> <!--second card-->
+                        <div class="card__image">
+                                <div class="card__label"> 360° </div>
+                                <img class="card__image-img" src="images/premium-I.png" alt="premium-I"> 
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title">Premium I</h2>
+                            <h3 class="card__subtitle">BROADCASTING TOWER</h3>
+                            <div class="card__description-aspects">
+                                <div class="card__time">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__time-img" src="images/time.svg" alt="time">
+                                    </a>
+                                    43 week + 1 day tenancy
+                                </div>
+                                <div class="card__price">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__price-img" src="images/price.svg" alt="price">
+                                    </a>
+                                    £195.00 per week / £8,412.30 total
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card"> <!--third card-->
+                        <div class="card__image">
+                            <img class="card__image-img" src="images/classic-studio.png" alt="classic-studio">
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title">Classic Studio</h2>
+                            <h3 class="card__subtitle">BROADCASTING TOWER</h3>
+                            <div class="card__description-aspects">
+                                <div class="card__time">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__time-img" src="images/time.svg" alt="time">
+                                    </a>
+                                    43 week + 1 day tenancy
+                                </div>
+                                <div class="card__price">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__price-img" src="images/price.svg" alt="price">
+                                    </a>
+                                    £240.00 per week / £10,353.60 total
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card"> <!--fourth card-->
+                        <div class="card__image">
+                            <img class="card__image-img" src="images/premium-I-studio.png" alt="premium-I-studio">
+                        </div>
+                        <div class="card__description">
+                            <h2 class="card__title">Premium I Studio</h2>
+                            <h3 class="card__subtitle">BROADCASTING TOWER</h3>
+                            <div class="card__description-aspects">
+                                <div class="card__time">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__time-img" src="images/time.svg" alt="time">
+                                    </a>
+                                    43 week + 1 day tenancy
+                                </div>
+                                <div class="card__price">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__price-img" src="images/price.svg" alt="price">
+                                    </a>
+                                    £245.00 per week / £10,569.30 total
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="card"> <!--fifth card-->
+                        <div class="card__image"></div>
+                        <div class="card__description">
+                            <h2 class="card__title">Standard</h2>
+                            <h3 class="card__subtitle">MILL STREET</h3>
+                            <div class="card__description-aspects">
+                                <div class="card__time">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__time-img" src="images/time.svg" alt="time">
+                                    </a>
+                                    43 week tenancy
+                                </div>
+                                <div class="card__price">
+                                    <a href="#!" class="card__icon">
+                                        <img class="card__price-img" src="images/price.svg" alt="price">
+                                    </a>
+                                    £144.00 per week / £6,192.00 total
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section> <!--end cards_list-->
+    </main>
 </body>
 </html>
