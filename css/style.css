@@ -229,13 +229,13 @@ html {
     border-left: 1px solid #DDDDDD;
   }
   .card__image {
-    width: 80%;
+    width: 40%;
     min-width: 280px;
     max-width: 360px;
     height: 225px;
   }
   .card__description {
-    width: 100%;
+    width: 60%;
     padding: 30px;
     padding-bottom: 52px;
     border: 1px solid #DDDDDD;
