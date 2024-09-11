@@ -1,8 +1,10 @@
 .post{
     position: relative;
     display: inline-flex;
+    width: 100%;
     &__image-left{
-        width: 50px;
+        position: relative;
+        width: 15%;
         align-items: center;
         box-shadow: 15px 0px $green;
         margin-right: 15px;
@@ -13,14 +15,21 @@
         height: 100%;
     }
     &__description{
-        width: 275px;
+        width: 85%;
         background-color: $light_grey2;
         padding: 30px;
+    }
+    &__description-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
     &__title{
         font-size: 26px;
         font-weight: 700;
-        margin-bottom: 10px;
+    }
+    &__btn-desktop{
+        display: none;
     }
     &__subtitle{
         font-size: 12px;
@@ -43,7 +52,7 @@
         margin: 4px;
     }
     &__event-text{
-        width: 157px;
+        min-width: 157px;
         margin-left: 15px;
         margin-right: 10px;
         font-size: 16px;
@@ -55,7 +64,7 @@
         color: $black;
     }
 
-    &__btn{
+    &__btn-mobile{
         height: 48px;
         width: 215px;
         border: 1px solid $light_grey;
@@ -76,20 +85,20 @@
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1070px){
     .post{
         &__description{
-            width: 1008px;
-            height: 392px;
             background-color: $light_grey2;
             padding-top: 80px;
-            padding-bottom: 80px;
+            padding-bottom: 65px;
             padding-left: 84px;
             padding-right: 84px;
         }
+        &__description-title{
+            margin-bottom: 30px;
+        }
         &__title{
             font-size: 46px;
-            margin-bottom: 30px;
         }
         &__subtitle{
             font-size: 14px;
@@ -121,18 +130,24 @@
             }
         }
         &__event-text{
-            width: 777px;
             font-size: 18px;
             margin-bottom: 20px;
             color: $purple;
         }
-        &__btn{
+        &__btn-mobile{
+            display: none;
+        }
+        &__btn-desktop{
+            display: block;
+            margin-left: 40px;
+            background-color: $light_grey2;
+            font-size: 14px;
+            font-weight: 700;
             position: relative;
-            bottom: 260px;
-            left: 362px;
             height: 48px;
             width: 215px;
             border: none;
+            
             &::before{
                 content: "";
                 width: 40px;
@@ -147,18 +162,19 @@
     }
 } 
 
-@media (min-width: 1920px){
+@media (min-width: 1400px){
     .post{
         &__image-left{
-            width: 504px;
-            height: 393px;
+            width: 30%;
             background-position:center;
             box-shadow: none;
             margin-right: 0px;
         }
+        &__description{
+            width: 58%;
+        }
         &__image-right{
-            width: 168px;
-            height: 393px;
+            width: 12%;
             display: unset;
             box-shadow: 40px 0px $green;
         }
