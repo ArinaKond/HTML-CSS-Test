@@ -136,6 +136,187 @@ html {
     margin-left: 100px;
     margin-right: 100px;
   }
+
+.signpost__container {
+  min-width: 340px;
+  margin-top: 80px;
+  margin-bottom: 41px;
+  margin-left: 17px;
+  margin-right: 18px;
+}
+.signpost__body {
+  display: flex;
+  width: 100%;
+}
+.signpost__image-left {
+  position: relative;
+  width: 15%;
+  align-items: center;
+  box-shadow: 15px 0px #05C3DE;
+  margin-right: 15px;
+}
+.signpost__image-left-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.signpost__description {
+  width: 85%;
+  background-color: #F3F3F3;
+  padding: 30px;
+}
+.signpost__description-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.signpost__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.signpost__btn-desktop {
+  display: none;
+}
+.signpost__subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #767676;
+  margin-bottom: 20px;
+}
+.signpost__event {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #DDDDDD;
+  margin-bottom: 15px;
+}
+.signpost__event-aspects {
+  display: flex;
+}
+.signpost__time-img {
+  margin: 4px;
+}
+.signpost__event-text {
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #753BBD;
+}
+.signpost__event-text-date {
+  color: #000000;
+}
+.signpost__event-text-full-date {
+  color: #000000;
+  display: none;
+}
+.signpost__btn-mobile {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #DDDDDD;
+  background-color: #F3F3F3;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.signpost__image-right {
+  display: none;
+}
+.signpost__image-right-img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  .signpost__container {
+    margin-top: 80px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+  .signpost__description {
+    background-color: #F3F3F3;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+  .signpost__description-title {
+    margin-bottom: 30px;
+  }
+  .signpost__title {
+    min-width: 370px;
+    margin-right: 20px;
+    font-size: 46px;
+    display: flex;
+    align-items: center;
+  }
+  .signpost__title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #DDDDDD;
+    display: block;
+    margin-left: 20px;
+  }
+  .signpost__subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .signpost__event-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #753BBD;
+  }
+  .signpost__event-text-date {
+    display: none;
+  }
+  .signpost__event-text-full-date {
+    display: block;
+  }
+  .signpost__btn-mobile {
+    display: none;
+  }
+  .signpost__btn-desktop {
+    display: block;
+    background-color: #F3F3F3;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    width: 215px;
+    border: none;
+  }
+}
+@media (min-width: 1440px) {
+  .signpost__container {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+  .signpost__image-left {
+    width: 30%;
+    background-position: center;
+    box-shadow: none;
+    margin-right: 0px;
+  }
+  .signpost__description {
+    width: 58%;
+  }
+  .signpost__image-right {
+    width: 12%;
+    display: block;
+    box-shadow: 40px 0px #05C3DE;
+  }
+}
+
+html {
+  box-sizing: border-box;
 }
 
 .card {
