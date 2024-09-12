@@ -6,23 +6,179 @@
         margin-left: 17px;
         margin-right: 18px;
     }
-    
+    &__body{
+        display: flex;
+        width: 100%;
+    }
+    &__image-left{
+        position: relative;
+        width: 15%;
+        align-items: center;
+        box-shadow: 15px 0px $green;
+        margin-right: 15px;
+    }
+    &__image-left-img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    &__description{
+        width: 85%;
+        background-color: $light_grey2;
+        padding: 30px;
+    }
+    &__description-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__title{
+        font-size: 26px;
+        font-weight: 700;
+    }
+    &__btn-desktop{
+        display: none;
+    }
+    &__subtitle{
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey;
+        margin-bottom: 20px;
+    }
+    &__event{
+        $this: &;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $light_grey;
+        margin-bottom: 15px;
+    }
+    &__event-aspects{
+        display: flex;
+    }
+    &__time-img{
+        margin: 4px;
+    }
+    &__event-text{
+        margin-left: 15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $purple;
+    }
+    &__event-text-date{
+        color: $black;
+    }
+    &__event-text-full-date{
+        color: $black;
+        display: none;
+    }
 
+    &__btn-mobile{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid $light_grey;
+        background-color: $light_grey2;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 14px;
+        font-weight: 700;
+        color: $black;
+    }
+    &__image-right{
+        display: none;
+    }
+    &__image-right-img{
+        width: 100%;
+        height: 100%;
+    }
 
-    @media (min-width: 1070px){
+    @media (min-width: 1200px){
         &__container{
             margin-top: 80px;
             margin-right: 100px;
             margin-left: 100px;
             margin-bottom: 100px;
         }
+        &__description{
+            background-color: $light_grey2;
+            padding-top: 80px;
+            padding-bottom: 65px;
+            padding-left: 84px;
+            padding-right: 84px;
+        }
+        &__description-title{
+            margin-bottom: 30px;
+        }
+        &__title{
+            min-width: 370px;
+            margin-right: 20px;
+            font-size: 46px;
+            display: flex;
+            align-items: center;
+
+            &::after{
+                content: "";
+                width: 40px;
+                height: 2px;
+                border-radius: 1px;
+                background-color: $light_grey;
+                display: block;
+                margin-left: 20px;
+            }
+        }
+        &__subtitle{
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        &__event-text{
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: $purple;
+        }
+        &__event-text-date{
+            display: none;
+        }
+        &__event-text-full-date{
+            display: block;
+        }
+        &__btn-mobile{
+            display: none;
+        }
+        &__btn-desktop{
+            display: block;
+            background-color: $light_grey2;
+            font-size: 14px;
+            font-weight: 700;
+            color: $black;
+            position: relative;
+            width: 215px;
+            border: none;
+        }
     } 
 
-    @media (min-width: 1400px){
+    @media (min-width: 1440px){
         &__container{
             margin-top: 80px;
             margin-left: 100px;
             margin-bottom: 100px;
+        }
+        &__image-left{
+            width: 30%;
+            background-position:center;
+            box-shadow: none;
+            margin-right: 0px;
+        }
+        &__description{
+            width: 58%;
+        }
+        &__image-right{
+            width: 12%;
+            display: block;
+            box-shadow: 40px 0px $green;
         }
     }
 }
